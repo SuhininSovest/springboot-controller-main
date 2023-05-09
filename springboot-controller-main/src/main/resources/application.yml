@@ -1,0 +1,42 @@
+server:
+    address: localhost
+    port: 8088
+    servlet:
+        context-path: /
+
+spring:
+    datasource:
+        driverClassName: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://127.0.0.1:3306/shark_db?useUnicode=true&characterEncoding=UTF-8
+        username: root
+        password: 1111
+        initialize: true
+        initialization-mode: always
+        sql-script-encoding: UTF-8
+    jpa:
+        hibernate:
+            ddl-auto: none
+
+    http:
+        encoding:
+            charset: UTF-8
+            enabled: true
+            force: true
+            force-request: true
+            force-response: true
+
+    thymeleaf:
+        cache: false
+
+    resources:
+        chain:
+            cache: false
+
+    main:
+        banner-mode: off
+
+logging:
+    level:
+        org:
+            springframework: OFF
+        root: OFF
