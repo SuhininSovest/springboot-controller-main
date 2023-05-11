@@ -12,4 +12,5 @@ public class HomeController extends HtmlController {
     public ModelAndView home(final Map<String, Object> model) {
         return new ModelAndView("layouts/home", model);
     }
+
 }

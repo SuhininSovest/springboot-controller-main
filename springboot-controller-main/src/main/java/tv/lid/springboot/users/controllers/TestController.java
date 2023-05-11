@@ -1,0 +1,17 @@
+package tv.lid.springboot.users.controllers;
+
+import java.util.Map;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.servlet.ModelAndView;
+import tv.lid.springboot.users.controllers.HtmlController;
+
+@Controller
+public class TestController extends HtmlController {
+    @GetMapping("/test")
+    public ModelAndView test(final Map<String, Object> model) {
+        return new ModelAndView("layouts/test", model);
+    }
+
+}

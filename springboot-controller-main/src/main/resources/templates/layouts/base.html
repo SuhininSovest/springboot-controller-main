@@ -19,6 +19,7 @@
 
                         <div class="content" id="content">
                             <th:block th:switch="${route}">
+                                <th:block th:case="test" th:insert="pages/test.html :: content"></th:block>
                                 <th:block th:case="home" th:insert="pages/home.html :: content"></th:block>
                                 <th:block th:case="list" th:insert="pages/list.html :: content"></th:block>
                                 <th:block th:case="create" th:insert="pages/edit.html :: content(${route})"></th:block>

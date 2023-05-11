@@ -27,3 +27,4 @@ CREATE TABLE IF NOT EXISTS contacts (
     PRIMARY KEY (id),
     FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
 );
+

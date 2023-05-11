@@ -94,6 +94,10 @@
                 <a class="active" th:if="${route == 'create'}">Создать</a>
                 <a href="/create" th:unless="${route == 'create'}">Создать</a>
             </li>
+            <li>
+                <a class="active" th:if="${route == 'test'}">тест</a>
+                <a href="/test" th:unless="${route == 'test'}">тест</a>
+            </li>
         </ul>
     </div>
 </th:block>
